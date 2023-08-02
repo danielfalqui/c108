@@ -37,6 +37,7 @@ while True:
                     finger_fold_status.append(False)
 
             print(finger_fold_status) 
+            
             if all(finger_fold_status):
                 if lm_list[thumb_tip].y < lm_list[thumb_tip-1].y < lm_list[thumb_tip-2].y:
                     print("Curti")
@@ -52,5 +53,5 @@ while True:
             mp_draw.DrawingSpec((0,255,0),4,2))
     
 
-    cv2.imshow("detector de maos", img)
-    cv2.waitKey(1)
+cv2.imshow("detector de maos", img)
+cv2.waitKey(1)
